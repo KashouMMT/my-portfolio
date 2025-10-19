@@ -120,7 +120,8 @@ npm run deploy
 
 ## 👤 Author
 
-Myint Myat THu
+Myint Myat Thu
+
 🌐 [LinkedIn](#)
 💻 [Github](#)
 ✉️ [Email Me](#)
