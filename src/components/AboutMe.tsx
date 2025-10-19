@@ -3,7 +3,7 @@ const AboutMe = () => {
     <div className="rounded-3 shadow p-4 p-md-5">
       <h5 className="text-uppercase text-secondary mb-3">About Me</h5>
       <p className="mb-3">
-        I’m a junior full-stack developer with hands-on experience building REST APIs,
+        I’m a full-stack developer with hands-on experience building REST APIs,
         server-side rendered apps, and practical AI prototypes. I started with Java
         and grew into Spring MVC/Spring Boot, then expanded to React for the UI and
         Python for automation/AI. I’ve shipped production code, participated in the SDLC,
@@ -12,7 +12,7 @@ const AboutMe = () => {
 
       <ul className="list-group list-group-flush mb-4">
         <li className="list-group-item px-0">
-          <strong>Experience:</strong> 1 year at DAT (DIR-ACE Technology) — full-stack junior dev<br />
+          <strong>Experience:</strong> 1 year at DAT (DIR-ACE Technology) — full-stack dev<br />
           <a
             href="https://www.diracetechnology.com/"
             target="_blank"

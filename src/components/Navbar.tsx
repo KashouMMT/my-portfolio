@@ -15,7 +15,7 @@ const Navbar = () => {
         {/* Headline */}
         <div className="flex-grow-1" style={{ minWidth: 0 }}>
           <h1 className="fw-bold mb-1 display-6">Myint Myat Thu</h1>
-          <p className="mb-2 text-secondary">Junior Full-Stack Software Developer</p>
+          <p className="mb-2 text-secondary">Full-Stack Software Developer</p>
           <hr className="w-25 my-2" />
           <p className="mb-0 fs-6">
             Passionate and motivated IT professional with a strong foundation in software
