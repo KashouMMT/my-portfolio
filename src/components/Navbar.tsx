@@ -18,9 +18,9 @@ const Navbar = () => {
           <p className="mb-2 text-secondary">Full-Stack Software Developer</p>
           <hr className="w-25 my-2" />
           <p className="mb-0 fs-6">
-            Passionate and motivated IT professional with a strong foundation in software
-            development. Quick to learn new stacks, comfortable across backend and frontend,
-            and focused on building clean, production-ready solutions.
+            Aspiring full-stack engineer with a strong foundation in backend development and growing expertise in frontend design. 
+            Experienced in Java Spring Boot and React frameworks, I focus on writing clean, scalable solutions that solve real business problems. 
+            I’m eager to join a team where I can contribute, learn from experienced developers, and grow into a versatile software engineer.
           </p>
           <ul className="list-inline mb-0 mt-2 small">
             <li className="list-inline-item">

@@ -8,7 +8,7 @@
 
 ---
 
-A modern, responsive React portfolio showcasing my skills, projects, and certifications as a **Junior Full-Stack Software Developer**.
+A modern, responsive React portfolio showcasing my skills, projects, and certifications as a **Full-Stack Software Developer**.
 
 ---
 
