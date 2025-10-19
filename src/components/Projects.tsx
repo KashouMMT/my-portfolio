@@ -14,7 +14,7 @@ const Projects = () => {
           <span className="badge rounded-pill text-bg-success ms-1 mt-3 px-3 py-2 shadow-sm">React</span>
           <div className="mt-2">
             <a href="#" className="text-decoration-none me-3" target="_blank">🛠️ Still in Progress</a>
-            <a href="#" className="text-decoration-none" target="_blank">💻 Source Code</a>
+            <a href="https://github.com/KashouMMT/React-and-SpringBoot-Project" className="text-decoration-none" target="_blank">💻 Source Code</a>
           </div>
         </div>
       </div>
@@ -30,8 +30,8 @@ const Projects = () => {
             Server-rendered pages with authentication and role-based access; deployed on Railway.
           </div>
           <div className="mt-2">
-            <a href="#" className="text-decoration-none me-3" target="_blank">🔗 Live Demo</a>
-            <a href="#" className="text-decoration-none" target="_blank">💻 Source Code</a>
+            <a href="#" className="text-decoration-none me-3" target="_blank">🛠️ Still in Progress</a>
+            <a href="https://github.com/KashouMMT/Gold-Project" className="text-decoration-none" target="_blank">💻 Source Code</a>
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@ const Projects = () => {
           <span className="badge rounded-pill text-bg-success ms-1 mt-3 px-3 py-2 shadow-sm">LangChain</span>
           <div className="mt-2">
             <a href="#" className="text-decoration-none me-3" target="_blank">🛠️ Still in Progress</a>
-            <a href="#" className="text-decoration-none" target="_blank">💻 Source Code</a>
+            <a href="https://github.com/KashouMMT/Chatbot-LLM-AI" className="text-decoration-none" target="_blank">💻 Source Code</a>
           </div>
         </div>
       </div>
@@ -53,7 +53,7 @@ const Projects = () => {
           <div className="text-muted small">Built from scratch using low-level concepts (memory, input loop, collision, scoring).</div>
           <span className="badge rounded-pill text-bg-success ms-1 mt-3 px-3 py-2 shadow-sm">C++</span>
           <div className="mt-2">
-            <a href="#" className="text-decoration-none" target="_blank">💻 Source Code</a>
+            <a href="https://github.com/KashouMMT/TetrisGame-Cpp" className="text-decoration-none" target="_blank">💻 Source Code</a>
           </div>
         </div>
       </div>
