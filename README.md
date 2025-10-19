@@ -122,9 +122,9 @@ npm run deploy
 
 Myint Myat Thu
 
-🌐 [LinkedIn](#)
-💻 [Github](#)
-✉️ [Email Me](#)
+🌐 [LinkedIn](https://www.linkedin.com/in/myint-myat-thu-9aa850389/)
+💻 [Github](https://github.com/KashouMMT)
+✉️ [Email Me](mmyaatthum925@gmail.com)
 
 ---
 
