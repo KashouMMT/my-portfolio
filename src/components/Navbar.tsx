@@ -36,7 +36,7 @@ const Navbar = () => {
             <li className="list-inline-item text-muted">|</li>
             <li className="list-inline-item">
               <a
-                href="mailto:mmyaatthum925@gmail.com"
+                href="https://www.facebook.com/kashou.mmt.925"
                 className="link-secondary text-decoration-none"
               >
                 Facebook
