@@ -6,10 +6,10 @@ const Certifications = () => {
 
         <ul className="list-unstyled mb-0">
           <li className="mb-3">
-            ✅ <strong>Microsoft Certified:</strong> Azure Administrator (AZ-104)
+            🎓 <strong>IBM Full Stack Software Developer</strong> — Coursera
             <br />
             <a
-              href="https://www.credly.com/badges/example-az104"
+              href="https://coursera.org/share/7abcac49da2743b2fd282dd7c851ac1b"
               target="_blank"
               rel="noopener noreferrer"
               className="text-decoration-none small link-primary"
@@ -19,10 +19,10 @@ const Certifications = () => {
           </li>
 
           <li className="mb-3">
-            ✅ <strong>Microsoft Certified:</strong> Windows Server Hybrid Admin (AZ-800)
+            🎓 <strong>Meta Full Stack Software Developer</strong> — Coursera
             <br />
             <a
-              href="https://www.credly.com/badges/example-az800"
+              href="https://coursera.org/share/c62d2108cf2510e31ab41c1e49086ee6"
               target="_blank"
               rel="noopener noreferrer"
               className="text-decoration-none small link-primary"
@@ -32,10 +32,10 @@ const Certifications = () => {
           </li>
 
           <li className="mb-3">
-            🎓 <strong>IBM IT Support Professional Certificate</strong> — Coursera
+            🎓 <strong>IBM Backend Developer</strong> — Coursera
             <br />
             <a
-              href="https://coursera.org/verify/example-ibm"
+              href="https://coursera.org/share/9b689011f593c714c9a880f7e87aa5f4"
               target="_blank"
               rel="noopener noreferrer"
               className="text-decoration-none small link-primary"
@@ -45,10 +45,10 @@ const Certifications = () => {
           </li>
 
           <li className="mb-3">
-            🎓 <strong>Google IT Support Professional Certificate</strong> — Coursera
+            🎓 <strong>Meta Backend Developer</strong> — Coursera
             <br />
             <a
-              href="https://coursera.org/verify/example-google"
+              href="https://coursera.org/share/4e21db7b9ad4e5118acb181bb6fde014"
               target="_blank"
               rel="noopener noreferrer"
               className="text-decoration-none small link-primary"
