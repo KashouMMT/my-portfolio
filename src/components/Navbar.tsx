@@ -1,4 +1,4 @@
-import Passport_photo from "../assets/Passport_photo.jpg";
+import my_profile from "../assets/my_profile.jpg";
 
 const Navbar = () => {
   return (
@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="d-flex align-items-center w-100 gap-4">
         {/* Avatar */}
         <img
-          src={Passport_photo}
+          src={my_profile}
           alt="Profile"
           className="rounded-circle border"
           style={{ width: 270, height: 180, objectFit: "cover" }}
