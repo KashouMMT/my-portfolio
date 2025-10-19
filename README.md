@@ -50,7 +50,7 @@ Each section is modular, reusable, and styled using Bootstrap classes for clarit
 
 ## ✨ Features
 
-- 📸 **Profile Section:** Displays introduction, photo, and quick contact links (LinkedIn, GitHub, Email). # Currently not linked yet.
+- 📸 **Profile Section:** Displays introduction, photo, and quick contact links (LinkedIn, GitHub, Email).
 - 💡 **About Me:** Overview of background, professional experience, and technical journey.  
 - ⚙️ **Skills Section:** Highlight of programming languages, frameworks, tools, and platforms.  
 - 🧱 **Projects Section:** List of major personal and professional projects with live demo & source links.
