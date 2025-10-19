@@ -5,7 +5,6 @@
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Open%20to%20Work-success?style=for-the-badge)](#)
 
 ---
 
@@ -29,7 +28,7 @@ A modern, responsive React portfolio showcasing my skills, projects, and certifi
 ---
 
 ## 📂 Project Structure
-
+```
 src/
 ├── assets/
 │ └── Passport_photo.jpg
@@ -44,7 +43,7 @@ src/
 ├── layout/
 │ ├── App.tsx # Plan to make HomeLayout.tsx instead of using App.tsx as layout.
 └── main.tsx
-
+```
 Each section is modular, reusable, and styled using Bootstrap classes for clarity and responsiveness.
 
 ---
