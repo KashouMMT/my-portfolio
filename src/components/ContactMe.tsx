@@ -36,7 +36,7 @@ const ContactMe = () => {
           <dt className="col-sm-3 fw-semibold text-secondary">Profiles</dt>
           <dd className="col-sm-9">
             <a
-              href="https://linkedin.com/in/your-link"
+              href="https://www.linkedin.com/in/myint-myat-thu-9aa850389/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-decoration-none me-3"
@@ -44,7 +44,7 @@ const ContactMe = () => {
               LinkedIn
             </a>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/KashouMMT"
               target="_blank"
               rel="noopener noreferrer"
               className="text-decoration-none me-3"

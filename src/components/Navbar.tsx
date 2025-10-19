@@ -25,7 +25,7 @@ const Navbar = () => {
           <ul className="list-inline mb-0 mt-2 small">
             <li className="list-inline-item">
               <a
-                href="https://linkedin.com/in/your-link"
+                href="https://www.linkedin.com/in/myint-myat-thu-9aa850389/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link-secondary text-decoration-none"
@@ -36,7 +36,7 @@ const Navbar = () => {
             <li className="list-inline-item text-muted">|</li>
             <li className="list-inline-item">
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:mmyaatthum925@gmail.com"
                 className="link-secondary text-decoration-none"
               >
                 Facebook
@@ -45,7 +45,7 @@ const Navbar = () => {
             <li className="list-inline-item text-muted">|</li>
             <li className="list-inline-item">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/KashouMMT"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link-secondary text-decoration-none"
