@@ -4,6 +4,16 @@ import "../../assets/css/portfolio.css";
 export default function History() {
 	const jobs = [
 		{
+			title: "Portfolio Website",
+			sub_title: "Personal portfolio built with React & TypeScript",
+			date: "2025",
+			body: `Designed and developed a modern, responsive portfolio website using React and TypeScript. 
+Implemented reusable component architecture, interactive UI sections, and smooth animations to enhance user experience. 
+Integrated features such as project showcases, skill visualization, and a functional contact form with EmailJS. 
+Deployed using GitHub Pages with automated workflows for continuous updates.`,
+			link: "https://github.com/KashouMMT/my-portfolio",
+		},
+		{
 			title: "Tetris in C/C++",
 			sub_title: "Terminal-based game project",
 			date: "2024-04-27",
