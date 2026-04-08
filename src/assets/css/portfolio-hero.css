@@ -1,0 +1,129 @@
+.hero-container {
+	position: relative;
+	min-height: 100vh;
+	background: #05070d;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	font-family: Arial, sans-serif;
+}
+
+.grid-bg {
+	position: absolute;
+	inset: 0;
+	background-image: radial-gradient(
+		rgba(255, 255, 255, 0.05) 1px,
+		transparent 1px
+	);
+	background-size: 40px 40px;
+}
+
+.glow {
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	background: linear-gradient(90deg, #3b82f6, #a855f7, #ec4899);
+	filter: blur(120px);
+	opacity: 0.4;
+	border-radius: 50%;
+}
+
+.content {
+	position: relative;
+	text-align: center;
+	max-width: 800px;
+}
+
+.title {
+	font-size: 72px;
+	font-weight: bold;
+	background: linear-gradient(90deg, #60a5fa, #c084fc, #f472b6);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.role {
+	margin-top: 20px;
+	letter-spacing: 3px;
+	color: #9ca3af;
+}
+
+.description {
+	margin-top: 10px;
+	color: #6b7280;
+}
+
+.tech-stack {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+}
+
+.tech-pill {
+	padding: 8px 16px;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	font-size: 14px;
+}
+
+.scroll {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 14px;
+	color: #6b7280;
+	animation: bounce 1.5s infinite;
+	transition: opacity 0.3s;
+}
+
+.buttons {
+	margin-top: 30px;
+	display: flex;
+	gap: 15px;
+	justify-content: center;
+}
+
+.my-btn {
+	padding: 12px 24px;
+	border-radius: 999px;
+	border: none;
+	cursor: pointer;
+	font-size: 14px;
+	color: white;
+	transition: all 0.3s ease;
+	text-decoration: none;
+}
+
+.my-btn.primary {
+	background: linear-gradient(90deg, #3b82f6, #a855f7);
+}
+
+.my-btn.secondary {
+	background: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.my-btn.primary:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+}
+
+.my-btn.secondary:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes bounce {
+	0%,
+	100% {
+		transform: translate(-50%, 0);
+	}
+	50% {
+		transform: translate(-50%, 10px);
+	}
+}

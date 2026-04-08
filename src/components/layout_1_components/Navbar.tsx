@@ -1,4 +1,4 @@
-import my_profile from "../assets/my_profile.jpg";
+import my_profile from "../../assets/images/my_profile.jpg";
 
 const Navbar = () => {
   return (

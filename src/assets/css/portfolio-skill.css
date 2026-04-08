@@ -1,0 +1,106 @@
+.expertise-section {
+	padding: 80px 20px;
+	background: #0b1220;
+	color: white;
+	text-align: center;
+}
+
+.section-title {
+	font-size: 36px;
+	margin-bottom: 50px;
+}
+
+.cards {
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.card {
+	background: rgb(33 38 45 / var(--tw-bg-opacity, 1)) !important;
+	color: white !important;
+	padding: 25px;
+	border-radius: 15px;
+	width: 300px;
+	text-align: left;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	min-height: 320px;
+
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-container {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+/* HOVER SCALE EFFECT */
+.card:hover {
+	transform: scale(1.08);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+	z-index: 2;
+}
+
+.card h3 {
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.icon {
+	font-size: 20px;
+}
+
+.skill {
+	margin-bottom: 15px;
+}
+
+.skill-header {
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.bar {
+	height: 6px;
+	background: #1f2937;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.fill {
+	height: 100%;
+	border-radius: 10px;
+}
+
+/* COLORS */
+.blue .fill {
+	background: linear-gradient(90deg, #3b82f6, #2563eb);
+}
+
+.green .fill {
+	background: linear-gradient(90deg, #22c55e, #16a34a);
+}
+
+.purple .fill {
+	background: linear-gradient(90deg, #a855f7, #7e22ce);
+}
+
+.yellow .fill {
+	background: linear-gradient(90deg, #f4f755, #cbce22);
+}
+
+@media (max-width: 768px) {
+	.cards {
+		flex-direction: column;
+		align-items: center;
+	}
+}
