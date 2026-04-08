@@ -51,3 +51,15 @@ ul {
 	padding-left: 18px;
 	color: #d1d5db;
 }
+
+.resume-link {
+	color: #60a5fa;
+	text-decoration: none;
+	font-weight: 500;
+	transition: 0.2s;
+}
+
+.resume-link:hover {
+	text-decoration: underline;
+	color: #93c5fd;
+}

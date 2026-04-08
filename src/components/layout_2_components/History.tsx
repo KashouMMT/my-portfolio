@@ -1,5 +1,5 @@
 import "../../assets/css/portfolio-history.css";
-import "../../assets/css/portfolio.css"
+import "../../assets/css/portfolio.css";
 
 export default function History() {
 	const jobs = [
@@ -54,7 +54,14 @@ Focused on clean architecture, maintainability, and real-world usability.`,
 			<p>
 				Below you will find a summary of my past employment experience
 				and projects I made. <br />
-				Additionally, if you require, you can download my resume here.
+				Additionally, if you require, you can{" "}
+				<a
+					href="/my-portfolio/full-stack-software-developer.pdf"
+					className="resume-link"
+				>
+					download my resume here
+				</a>
+				.
 			</p>
 			<div className="timeline">
 				{jobs.map((job, i) => (
