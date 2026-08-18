@@ -5,13 +5,9 @@
 	text-align: center;
 }
 
-.section-title {
-	font-size: 36px;
-	margin-bottom: 50px;
-}
-
 .cards {
 	display: flex;
+	margin-top: 40px;
 	gap: 30px;
 	justify-content: center;
 	flex-wrap: wrap;

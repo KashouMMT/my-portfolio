@@ -1,6 +1,6 @@
 .hero-container {
 	position: relative;
-	min-height: 100vh;
+	min-height: calc(100dvh - 80px);
 	background: #05070d;
 	color: white;
 	display: flex;
@@ -40,6 +40,7 @@
 	font-size: 72px;
 	font-weight: bold;
 	background: linear-gradient(90deg, #60a5fa, #c084fc, #f472b6);
+	background-clip: border-box;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -76,6 +77,7 @@
 	bottom: 30px;
 	left: 50%;
 	transform: translateX(-50%);
+	text-align: center;
 	font-size: 14px;
 	color: #6b7280;
 	animation: bounce 1.5s infinite;
@@ -116,6 +118,16 @@
 
 .my-btn.secondary:hover {
 	background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+	.hero-container {
+		min-height: 95dvh;
+	}
+	
+	.title {
+		font-size: 48px;
+	}
 }
 
 @keyframes bounce {

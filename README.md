@@ -89,7 +89,7 @@ npm run preview
 
 You can deploy this project easily using:
 
-- GitHub Pages (recommended for portfolios)
+- GitHub Pages
 - Vercel – Zero-config React deployment
 - Netlify – Drag & drop or CLI deployment
 

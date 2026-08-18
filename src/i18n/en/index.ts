@@ -1,0 +1,10 @@
+export { default as about } from "./components/enAbout";
+export { default as blog } from "./components/enBlogContent";
+export { default as certification } from "./components/enCertification";
+export { default as contact } from "./components/enContact";
+export { default as footer } from "./components/enFooter";
+export { default as hero } from "./components/enHero";
+export { default as history } from "./components/enHistory";
+export { default as navbar } from "./components/enNavbar";
+export { default as skill } from "./components/enSkill";
+export { default as tools } from "./components/enTools";

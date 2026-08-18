@@ -1,54 +1,60 @@
-import "../../assets/css/portfolio-skill.css";
+import { useTranslation } from "react-i18next";
+import "../assets/css/portfolio-skill.css";
 
-export default function PortfolioSkillSection() {
+const PortfolioSkillSection = () => {
+	const { t } = useTranslation();
+
 	return (
 		<div className="expertise-section">
-			<h2 className="section-title">Technical Expertise</h2>
+			<h2
+				className="section-title"
+				dangerouslySetInnerHTML={{ __html: t("skill.technical_expertise") }}
+			/>
 
 			<div className="cards">
 				{[
 					{
-						title: "Frontend Development",
+						title: t("skill.frontend_development"),
 						icon: "🎨",
 						color: "blue",
 						skills: [
-							["React", 90],
 							["TypeScript", 95],
+							["React", 90],
 							["CSS & Bootstrap", 75],
 							["Web Animation", 55],
 						],
 					},
 					{
-						title: "Backend & APIs Development",
+						title: t("skill.backend_and_api_development"),
 						icon: "⚡",
 						color: "green",
 						skills: [
-							["SpringBoot", 90],
 							["Java", 95],
-							["C/C++", 75],
-							["Database", 80],
+							["SpringBoot", 90],
+							["Python", 80],
+							["Database", 70],
 						],
 					},
-                    {
-						title: "AI Agent & LLM",
+					{
+						title: t("skill.ai_agent_and_llm"),
 						icon: "🚀",
 						color: "yellow",
 						skills: [
 							["LangChain", 95],
-							["Ollama", 80],
-							["RAG", 85],
 							["Prompt Engineering", 90],
+							["Ollama", 80],
+							["RAG", 70],
 						],
 					},
 					{
-						title: "DevOps & Tools",
+						title: t("skill.devops_and_tools"),
 						icon: "🚀",
 						color: "purple",
 						skills: [
-                            ["Docker", 85],
 							["Linux", 90],
-							["CI/CD", 80],
-							["AWS", 82],
+							["Docker", 85],
+							["GitHub", 80],
+							["CI/CD", 65],
 						],
 					},
 				].map((card, i) => (
@@ -79,4 +85,6 @@ export default function PortfolioSkillSection() {
 			</div>
 		</div>
 	);
-}
+};
+
+export default PortfolioSkillSection;

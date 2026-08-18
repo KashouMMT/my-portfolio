@@ -1,8 +1,14 @@
-// import Layout_1 from "./layout/Layout_1";
-import Layout_2 from "./layout/Layout_2";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Blog from "./pages/Blog";
 
 const App = () => {
-	return <Layout_2 />
+	return (
+		<Routes>
+			<Route path="/my-portfolio/" element={<Home />} />
+			<Route path="/my-portfolio/blog" element={<Blog />}/>
+		</Routes>
+	)
 };
 
 export default App;

@@ -1,0 +1,87 @@
+.blog-section {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	max-width: 800px;
+	margin-inline: auto;
+	color: white;
+}
+
+.blog-title {
+	font-size: 2rem;
+	font-weight: 800;
+}
+
+.blog-meta {
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+	margin: 10px 0px;
+	padding: 0;
+}
+
+.blog-meta-profile-icon {
+	width: 20px;
+	height: 20px;
+	border: 1px solid bla;
+	border-radius: 9999px;
+}
+
+.blog-meta li {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+.blog-meta li:not(:first-child)::before {
+	content: "•";
+	margin-right: 0.8rem;
+}
+
+.blog-content {
+	font-size: 17px;
+}
+
+.blog-content p,
+h2,
+h3 {
+	font-family:
+		"Iowan Old Style Local", "Iowan Old Style", "Palatino Linotype",
+		Palatino, Georgia, serif;
+	margin: 25px 0;
+    margin-bottom: 25px ;
+	color: rgb(255, 245, 232);
+}
+
+.blog-content p {
+    text-align: justify;
+}
+
+.blog-content h2 {
+	margin: 50px 0 !important;
+}
+
+.blog-content hr {
+	border: none;
+	height: 1px;
+	background: white;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    .blog-section {
+        padding: 25px;
+    }
+
+    .blog-title {
+        font-size: 1.2rem;
+    } 
+}
