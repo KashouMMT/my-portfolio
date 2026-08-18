@@ -5,8 +5,8 @@ import Blog from "./pages/Blog";
 const App = () => {
 	return (
 		<Routes>
-			<Route path="/my-portfolio/" element={<Home />} />
-			<Route path="/my-portfolio/blog" element={<Blog />}/>
+			<Route path="/" element={<Home />} />
+			<Route path="/blog" element={<Blog />}/>
 		</Routes>
 	)
 };

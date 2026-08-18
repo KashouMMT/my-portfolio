@@ -13,12 +13,12 @@ const Navbar = () => {
 			</Link>
 			<ul className="site-content">
 				<li className="site-link-li">
-					<Link to="/my-portfolio/" className="site-link">
+					<Link to="/" className="site-link">
 						{t("navbar.home")}
 					</Link>
 				</li>
 				<li className="site-link-li">
-					<Link to="/my-portfolio/blog" className="site-link">
+					<Link to="/blog" className="site-link">
 						{t("navbar.blog")}
 					</Link>
 				</li>
