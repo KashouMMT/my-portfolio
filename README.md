@@ -97,6 +97,6 @@ npm run deploy     # builds, then publishes dist/ to the gh-pages branch
 
 Myint Myat Thu
 
-🌐 [LinkedIn](https://www.linkedin.com/in/myint-myat-thu-9aa850389/)
+🌐 [LinkedIn](https://www.linkedin.com/in/myint-myat-thu-dev/)
 💻 [GitHub](https://github.com/KashouMMT)
 ✉️ [Email Me](mailto:mmyaatthum925@gmail.com)

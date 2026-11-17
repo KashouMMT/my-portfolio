@@ -73,7 +73,7 @@ const Contact = () => {
 					<div className="info-item">
 						<span>💼</span>
 						<a
-							href="https://linkedin.com/in/myint-myat-thu-9aa850389"
+							href="https://www.linkedin.com/in/myint-myat-thu-dev/"
 							target="_blank"
 							rel="noopener noreferrer"
 							dangerouslySetInnerHTML={{__html: t("contact.linkin")}} />
