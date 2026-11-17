@@ -2,13 +2,13 @@ export default {
 	blog_title: `If AI can help me build almost anything, <br />
 What exactly is my value as a programmer?
     `,
-	date: "Auguest 2026",
+	date: "August 2026",
 	content: `
 <p>
     I've been thinking about this question more than I'd like to admit.
 </p>
 <p>
-    I use AI quite a lot when I program. I hate the idea of being a <span className="bold">"vibe coder"</span>—someone 
+    I use AI quite a lot when I program. I hate the idea of being a <span class="bold">"vibe coder"</span>—someone 
     who blindly accepts whatever code an AI generates and  hopes it works without 
     understanding a single thing about programming.
 </p>
@@ -42,7 +42,7 @@ What exactly is my value as a programmer?
     Not because AI is bad.
 </p>
 <p>
-    <span className="bold">It's incredibly addictive to learn together with AI.</span>
+    <span class="bold">It's incredibly addictive to learn together with AI.</span>
 </p>
 <hr />
 <h2>The addictive part isn't the code</h2>
@@ -81,7 +81,7 @@ What exactly is my value as a programmer?
     There was something satisfying about being able to say:
 </p>
 <p>
-    <span className="italic">"I know how to build this all by myself."</span>
+    <span class="italic">"I know how to build this all by myself."</span>
 </p>
 <h3>
     But AI changes that feeling.
@@ -95,7 +95,7 @@ What exactly is my value as a programmer?
     Now I can ask an AI:
 </h3>
 <p>
-    <span className="italic">"I've never used this library before. Explain how it works and show me how I could use it for this particular problem."</span>
+    <span class="italic">"I've never used this library before. Explain how it works and show me how I could use it for this particular problem."</span>
 </p>
 <p>
     Within seconds, I have something to work with. <br />
@@ -155,7 +155,7 @@ What exactly is my value as a programmer?
     And perhaps most importantly:
 </p>
 <p>
-    <span className="bold">Can I take responsibility for the software I ship?</span>
+    <span class="bold">Can I take responsibility for the software I ship?</span>
 </p>
 <p>
     AI can generate an answer.
@@ -168,14 +168,14 @@ What exactly is my value as a programmer?
     I don't want to become a programmer who refuses to use AI because:
 </p>
 <p>
-    <span className="italic">"real programmers don't need it."</span> 
+    <span class="italic">"real programmers don't need it."</span> 
 </p>
 <p>
     But I also don't want to become a "vibe coder" who refuses to learn 
     the concepts and logic behind them because:
 </p>
 <p>
-    <span className="italic">"why bother when AI can do everything for me."</span>
+    <span class="italic">"why bother when AI can do everything for me."</span>
 </p>
 <p>
     Neither extreme makes much sense to me.
@@ -217,10 +217,10 @@ What exactly is my value as a programmer?
     But you should understand enough about its behavior and limitations to recognize:
 </p>
 <p>
-    <span className="italic">"This answer might be wrong."</span>
+    <span class="italic">"This answer might be wrong."</span>
 </p>
 <p>
-    Using a tool isn't the problem. The problem is <span className="bold">not understanding </span> 
+    Using a tool isn't the problem. The problem is <span class="bold">not understanding </span> 
     the tool well enough to know what it's doing for you.
 </p>
 <p>
@@ -253,7 +253,7 @@ What exactly is my value as a programmer?
     I don't need to know everything AI knows.
     I don't need to understand every line it generates before it generates it.
 </p>
-<h3>I prefer not to be <span className="bold">"blind"</span>.</h3>
+<h3>I prefer not to be <span class="bold">"blind"</span>.</h3>
 <p>
     If AI is driving, I still want to know where we're going.
 </p>

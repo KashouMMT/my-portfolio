@@ -70,7 +70,7 @@ const Certification = () => {
 	];
 
 	return (
-		<div id="work" className="my-section">
+		<div id="certifications" className="my-section">
 			<h2
 				dangerouslySetInnerHTML={{ __html: t("certification.title") }}
 			/>
@@ -93,6 +93,7 @@ const Certification = () => {
 								<a
 									href={cert.link}
 									target="_blank"
+									rel="noopener noreferrer"
 									className="project-link"
 									dangerouslySetInnerHTML={{
 										__html: t("certification.view_link"),

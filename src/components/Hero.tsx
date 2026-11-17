@@ -1,7 +1,15 @@
 import { useEffect } from "react";
+import type { MouseEvent } from "react";
 import { useTranslation } from "react-i18next";
 
 import "../assets/css/portfolio-hero.css";
+
+// The site uses HashRouter, so a plain href="#work" is read as the route
+// "/work" and renders a blank page. Scroll to the section ourselves instead.
+const scrollToSection = (id: string) => (e: MouseEvent<HTMLAnchorElement>) => {
+	e.preventDefault();
+	document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+};
 
 const PortfolioHero = () => {
 	const { t } = useTranslation();
@@ -57,6 +65,7 @@ const PortfolioHero = () => {
 				<div className="buttons">
 					<a
 						href="#work"
+						onClick={scrollToSection("work")}
 						className="my-btn primary"
 						dangerouslySetInnerHTML={{
 							__html: t("hero.view_my_work_btn"),
@@ -64,6 +73,7 @@ const PortfolioHero = () => {
 					/>
 					<a
 						href="#contact"
+						onClick={scrollToSection("contact")}
 						className="my-btn secondary"
 						dangerouslySetInnerHTML={{
 							__html: t("hero.get_in_touch_btn"),

@@ -108,7 +108,9 @@ const History = () => {
 					}}
 				/>
 				<a
-					href="/my-portfolio/full-stack-software-developer.pdf"
+					href={`${import.meta.env.BASE_URL}full-stack-software-developer.pdf`}
+					target="_blank"
+					rel="noopener noreferrer"
 					className="resume-link"
 					dangerouslySetInnerHTML={{
 						__html: t("history.download_my_resume_here"),
@@ -116,7 +118,9 @@ const History = () => {
 				/>
 				<br />
 				<a
-					href="/my-portfolio/full-stack-software-developer-japanese.pdf"
+					href={`${import.meta.env.BASE_URL}full-stack-software-developer-japanese.pdf`}
+					target="_blank"
+					rel="noopener noreferrer"
 					className="resume-link"
 					dangerouslySetInnerHTML={{
 						__html: t("history.for_japanese_resume"),
@@ -135,6 +139,7 @@ const History = () => {
 								<a
 									href={job.link}
 									target="_blank"
+									rel="noopener noreferrer"
 									className="project-link"
 									dangerouslySetInnerHTML={{
 										__html: t("history.view_project"),

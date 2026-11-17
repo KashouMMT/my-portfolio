@@ -39,9 +39,9 @@ const Contact = () => {
 				"service_xrpaevj",
 				"template_045icwx",
 				form,
+				// EmailJS public key: designed to ship in client code. Abuse is
+				// limited by the allowed-origins setting in the EmailJS dashboard.
 				"fYWpl5pRS749gMVKh",
-				// Please don't use my API keys. I'll curse you if you do.
-				// I'll do something about this later.
 			);
 
 			alert("Message sent successfully!");
@@ -103,9 +103,27 @@ const Contact = () => {
 					onSubmit={sendEmail}
 					className="contact-form"
 				>
-					<input name="user_name" placeholder={t("contact.your_name")} />
-					<input name="user_email" placeholder={t("contact.your_email")} />
-					<textarea name="message" placeholder={t("contact.your_message")} />
+					<input
+						name="user_name"
+						autoComplete="name"
+						aria-label={t("contact.your_name")}
+						placeholder={t("contact.your_name")}
+						required
+					/>
+					<input
+						name="user_email"
+						type="email"
+						autoComplete="email"
+						aria-label={t("contact.your_email")}
+						placeholder={t("contact.your_email")}
+						required
+					/>
+					<textarea
+						name="message"
+						aria-label={t("contact.your_message")}
+						placeholder={t("contact.your_message")}
+						required
+					/>
 					<button type="submit" disabled={loading}>
 						{loading ? t("contact.sending") : t("contact.send_message")}
 					</button>

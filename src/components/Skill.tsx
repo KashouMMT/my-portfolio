@@ -48,7 +48,7 @@ const PortfolioSkillSection = () => {
 					},
 					{
 						title: t("skill.devops_and_tools"),
-						icon: "🚀",
+						icon: "🛠️",
 						color: "purple",
 						skills: [
 							["Linux", 90],

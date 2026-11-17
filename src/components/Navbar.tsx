@@ -8,7 +8,7 @@ const Navbar = () => {
 
 	return (
 		<div className="site-navbar">
-			<Link to="/my-portfolio/" className="site-logo">
+			<Link to="/" className="site-logo">
 				{t("hero.name")}
 			</Link>
 			<ul className="site-content">
