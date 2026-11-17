@@ -1,4 +1,4 @@
 export default {
 	home: "ホーム",
-	blog: "ブログ",
+	blog: "記事",
 };

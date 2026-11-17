@@ -63,3 +63,27 @@ ul {
 	text-decoration: underline;
 	color: #93c5fd;
 }
+
+.history-subheading {
+	margin-top: 30px;
+}
+
+.summary {
+	color: #e5e7eb;
+	margin-bottom: 8px;
+}
+
+.entry-bullets {
+	margin-bottom: 12px;
+}
+
+.entry-bullets li {
+	margin-bottom: 6px;
+	line-height: 1.6;
+}
+
+.entry-links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}

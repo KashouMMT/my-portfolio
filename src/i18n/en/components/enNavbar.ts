@@ -1,4 +1,4 @@
 export default {
 	home: "Home",
-	blog: "Blog",
+	blog: "Writing",
 };

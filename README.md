@@ -6,7 +6,7 @@
 
 ---
 
-A responsive React portfolio showcasing my skills, projects, and certifications as a **Full-Stack Software Developer**, in English and Japanese.
+A responsive React portfolio showcasing my skills, experience, projects, and certifications as a **Full-Stack & AI Engineer**, in English and Japanese.
 
 ---
 
@@ -43,7 +43,7 @@ src/
 ├── App.tsx                # Routes: / (Home), /blog (Blog)
 ├── layout/Layout.tsx      # Navbar + page + Footer
 ├── pages/
-│   ├── Home.tsx           # Hero, Skill, About, Tools, History, Certification, Contact
+│   ├── Home.tsx           # Hero, Skill, History (Experience + Projects), Certification, Contact
 │   └── Blog.tsx           # BlogContent, Contact
 ├── components/            # One component per section
 ├── i18n/

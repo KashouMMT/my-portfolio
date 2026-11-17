@@ -5,40 +5,39 @@
 	text-align: center;
 }
 
+.expertise-desc {
+	color: #9ca3af;
+	max-width: 640px;
+	margin: 10px auto 0;
+}
+
 .cards {
 	display: flex;
-	margin-top: 40px;
+	margin: 40px auto 0;
+	max-width: 1100px;
 	gap: 30px;
 	justify-content: center;
 	flex-wrap: wrap;
 }
 
 .card {
-	background: rgb(33 38 45 / var(--tw-bg-opacity, 1)) !important;
+	background: rgb(33 38 45) !important;
 	color: white !important;
 	padding: 25px;
 	border-radius: 15px;
-	width: 300px;
+	border-top: 3px solid var(--accent, #3b82f6);
+	width: 320px;
 	text-align: left;
 
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-
-	min-height: 320px;
 
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skills-container {
-	display: flex;
-	flex-direction: column;
-	gap: 12px;
-}
-
-/* HOVER SCALE EFFECT */
+/* HOVER LIFT EFFECT */
 .card:hover {
-	transform: scale(1.08);
+	transform: translateY(-6px);
 	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 	z-index: 2;
 }
@@ -48,55 +47,49 @@
 	display: flex;
 	align-items: center;
 	gap: 10px;
+	font-size: 20px;
 }
 
 .icon {
 	font-size: 20px;
 }
 
-.skill {
-	margin-bottom: 15px;
-}
-
-.skill-header {
+.skill-chips {
 	display: flex;
-	justify-content: space-between;
-	font-size: 14px;
-	margin-bottom: 5px;
+	flex-wrap: wrap;
+	gap: 8px;
 }
 
-.bar {
-	height: 6px;
-	background: #1f2937;
-	border-radius: 10px;
-	overflow: hidden;
+.skill-chip {
+	padding: 6px 12px;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.06);
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	font-size: 13px;
+	transition: 0.2s;
 }
 
-.fill {
-	height: 100%;
-	border-radius: 10px;
+.skill-chip:hover {
+	background: rgba(255, 255, 255, 0.14);
+	border-color: var(--accent, #3b82f6);
 }
 
-/* COLORS */
-.blue .fill {
-	background: linear-gradient(90deg, #3b82f6, #2563eb);
-}
-
-.green .fill {
-	background: linear-gradient(90deg, #22c55e, #16a34a);
-}
-
-.purple .fill {
-	background: linear-gradient(90deg, #a855f7, #7e22ce);
-}
-
-.yellow .fill {
-	background: linear-gradient(90deg, #f4f755, #cbce22);
-}
+/* ACCENT COLORS */
+.blue { --accent: #3b82f6; }
+.green { --accent: #22c55e; }
+.purple { --accent: #a855f7; }
+.yellow { --accent: #eab308; }
+.cyan { --accent: #06b6d4; }
+.orange { --accent: #f97316; }
 
 @media (max-width: 768px) {
 	.cards {
 		flex-direction: column;
 		align-items: center;
+	}
+
+	.card {
+		width: 100%;
+		max-width: 420px;
 	}
 }

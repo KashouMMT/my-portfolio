@@ -1,4 +1,3 @@
-export { default as about } from "./components/jaAbout";
 export { default as blog } from "./components/jaBlogContent";
 export { default as certification } from "./components/jaCertification";
 export { default as contact } from "./components/jaContact";
@@ -7,4 +6,3 @@ export { default as hero } from "./components/jaHero";
 export { default as history } from "./components/jaHistory";
 export { default as navbar } from "./components/jaNavbar";
 export { default as skill } from "./components/jaSkill";
-export { default as tools } from "./components/jaTools";

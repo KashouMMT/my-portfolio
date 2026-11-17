@@ -1,7 +1,11 @@
 export default {
-	technical_expertise: "技術分野",
-	frontend_development: "フロントエンド開発",
-	backend_and_api_development: "バックエンド・API開発",
-	ai_agent_and_llm: "AIエージェント・LLM",
-	devops_and_tools: "DevOps・ツール",
+	technical_expertise: "スキル",
+	description:
+		"実際にリリースしたプロジェクトで使用した技術です。いずれも下記の職務経歴に登場します。",
+	ai_and_llm: "AI・LLMシステム",
+	backend: "バックエンド",
+	frontend: "フロントエンド",
+	databases: "データベース",
+	devops_and_cloud: "DevOps・クラウド",
+	engineering_practice: "開発プラクティス",
 };

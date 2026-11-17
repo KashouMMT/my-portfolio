@@ -49,12 +49,12 @@ const PortfolioHero = () => {
 
 				<div className="tech-stack">
 					{[
-						"SpringBoot",
+						"Python",
+						"LangGraph",
+						"Spring Boot",
 						"React",
-						"Node.js",
-						"Docker",
-						"Linux",
-						"AI & LLM",
+						"PostgreSQL",
+						"AWS",
 					].map((tech) => (
 						<span key={tech} className="tech-pill">
 							{tech}

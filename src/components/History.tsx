@@ -2,105 +2,88 @@ import { useTranslation } from "react-i18next";
 import "../assets/css/portfolio-history.css";
 import "../assets/css/portfolio.css";
 
+type EntryLink = {
+	href: string;
+	// Shown as the link text; without it the link reads "View Project →".
+	label?: string;
+};
+
+type Entry = {
+	// Key under history.entries.* in the i18n files.
+	id: string;
+	links?: EntryLink[];
+};
+
+// Newest and most relevant first.
+const experience: Entry[] = [
+	{
+		id: "ai_platform",
+		links: [
+			{ href: "https://career-lamp.com", label: "career-lamp.com ↗" },
+			{ href: "https://ai-katazuke.jp", label: "ai-katazuke.jp ↗" },
+		],
+	},
+	{ id: "freelance_web" },
+	{ id: "dirace", links: [{ href: "https://www.diracetechnology.com/" }] },
+];
+
+const projects: Entry[] = [
+	{ id: "go_pattaya", links: [{ href: "https://github.com/KashouMMT/pattaya-japan" }] },
+	{ id: "dat_growth_hub", links: [{ href: "https://github.com/KashouMMT/DAT-Growth-Hub-3" }] },
+	{ id: "tetris", links: [{ href: "https://github.com/KashouMMT/TetrisGame-Cpp" }] },
+	{ id: "portfolio", links: [{ href: "https://github.com/KashouMMT/my-portfolio" }] },
+];
+
 const History = () => {
 	const { t } = useTranslation();
 
-	const jobs = [
-		{
-			title: t("history.title_1"),
-			sub_title: t("history.sub_title_1"),
-			date: t("history.date_1"),
-			body: t("history.body_1"),
-			link: "https://github.com/KashouMMT/my-portfolio",
-		},
-		{
-			title: t("history.title_13"),
-			sub_title: t("history.sub_title_13"),
-			date: t("history.date_13"),
-			body: t("history.body_13"),
-		},
-		{
-			title: t("history.title_12"),
-			sub_title: t("history.sub_title_12"),
-			date: t("history.date_12"),
-			body: t("history.body_12"),
-		},
-		{
-			title: t("history.title_11"),
-			sub_title: t("history.sub_title_11"),
-			date: t("history.date_11"),
-			body: t("history.body_11"),
-		},
-		{
-			title: t("history.title_10"),
-			sub_title: t("history.sub_title_10"),
-			date: t("history.date_10"),
-			body: t("history.body_10"),
-			link: "https://nureruhitozuma.com",
-		},
-		{
-			title: t("history.title_9"),
-			sub_title: t("history.sub_title_9"),
-			date: t("history.date_9"),
-			body: t("history.body_9"),
-			link: "https://gift-bangkok.com",
-		},
-		{
-			title: t("history.title_8"),
-			sub_title: t("history.sub_title_8"),
-			date: t("history.date_8"),
-			body: t("history.body_8"),
-			link: "https://omotenashi-bangkok.com",
-		},
-		{
-			title: t("history.title_7"),
-			sub_title: t("history.sub_title_7"),
-			date: t("history.date_7"),
-			body: t("history.body_7"),
-			link: "https://en-bangkok.com/",
-		},
-		{
-			title: t("history.title_6"),
-			sub_title: t("history.sub_title_6"),
-			date: t("history.date_6"),
-			body: t("history.body_6"),
-			link: "https://clubartemis-thai.com",
-		},
-		{
-			title: t("history.title_5"),
-			sub_title: t("history.sub_title_5"),
-			date: t("history.date_5"),
-			body: t("history.body_5"),
-			link: "https://github.com/KashouMMT/pattaya-japan",
-		},
-		{
-			title: t("history.title_4"),
-			sub_title: t("history.sub_title_4"),
-			date: t("history.date_4"),
-			body: t("history.body_4"),
-			link: "https://www.diracetechnology.com/",
-		},
-		{
-			title: t("history.title_3"),
-			sub_title: t("history.sub_title_3"),
-			date: t("history.date_3"),
-			body: t("history.body_3"),
-			link: "https://github.com/KashouMMT/DAT-Growth-Hub-3",
-		},
-		{
-			title: t("history.title_2"),
-			sub_title: t("history.sub_title_2"),
-			date: t("history.date_2"),
-			body: t("history.body_2"),
-			link: "https://github.com/KashouMMT/TetrisGame-Cpp",
-		},
-	];
+	const renderTimeline = (entries: Entry[]) => (
+		<div className="timeline">
+			{entries.map(({ id, links }) => {
+				const key = `history.entries.${id}`;
+				const raw: unknown = t(`${key}.bullets`, { returnObjects: true });
+				const bullets = Array.isArray(raw) ? (raw as string[]) : null;
+				const summary = t(`${key}.summary`, { defaultValue: "" });
+
+				return (
+					<div key={id} className="timeline-item">
+						<div className="timeline-content">
+							<h3>{t(`${key}.title`)}</h3>
+							<p className="company">{t(`${key}.sub_title`)}</p>
+							<p className="date">{t(`${key}.date`)}</p>
+							{summary && <p className="summary">{summary}</p>}
+							{bullets && (
+								<ul className="entry-bullets">
+									{bullets.map((bullet) => (
+										<li key={bullet}>{bullet}</li>
+									))}
+								</ul>
+							)}
+							{links && (
+								<div className="entry-links">
+									{links.map((link) => (
+										<a
+											key={link.href}
+											href={link.href}
+											target="_blank"
+											rel="noopener noreferrer"
+											className="project-link"
+										>
+											{link.label ?? t("history.view_project")}
+										</a>
+									))}
+								</div>
+							)}
+						</div>
+					</div>
+				);
+			})}
+		</div>
+	);
 
 	return (
 		<div id="work" className="my-section">
-			<h2
-				dangerouslySetInnerHTML={{ __html: t("history.work_history") }}
-			/>
+			<h2 dangerouslySetInnerHTML={{ __html: t("history.work_history") }} />
 			<p>
 				<span
 					dangerouslySetInnerHTML={{
@@ -127,29 +110,11 @@ const History = () => {
 					}}
 				/>
 			</p>
-			<div className="timeline">
-				{jobs.map((job, i) => (
-					<div key={i} className="timeline-item">
-						<div className="timeline-content">
-							<h3>{job.title}</h3>
-							<p className="company">{job.sub_title}</p>
-							<p className="date">{job.date}</p>
-							<p>{job.body}</p>
-							{job.link && (
-								<a
-									href={job.link}
-									target="_blank"
-									rel="noopener noreferrer"
-									className="project-link"
-									dangerouslySetInnerHTML={{
-										__html: t("history.view_project"),
-									}}
-								/>
-							)}
-						</div>
-					</div>
-				))}
-			</div>
+			{renderTimeline(experience)}
+
+			<h2 className="history-subheading">{t("history.projects")}</h2>
+			<p>{t("history.projects_description")}</p>
+			{renderTimeline(projects)}
 		</div>
 	);
 };
