@@ -1,13 +1,18 @@
 <!doctype html>
+<!--
+	GitHub Pages serves this file for any path it cannot find. Files in public/
+	are copied to dist/ untouched (no Vite build step), so this page cannot load
+	the React app itself: it sends the visitor back to the home page instead.
+-->
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" type="image/jpg" href="/my-profile.jpg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>portfolio</title>
+		<meta http-equiv="refresh" content="0; url=/my-portfolio/" />
+		<link rel="canonical" href="https://kashoummt.github.io/my-portfolio/" />
+		<title>Page not found — Myint Myat Thu</title>
 	</head>
 	<body>
-		<div id="root"></div>
-		<script type="module" src="/src/main.tsx"></script>
+		<p>Page not found. <a href="/my-portfolio/">Go to the home page</a>.</p>
 	</body>
 </html>
